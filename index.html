@@ -20,7 +20,7 @@
         <ion-icon slot="start" name="heart"></ion-icon>
         Hello
     </ion-button>
-    <ion-button fill="outline" color="secondary">
+    <ion-button id="button3" fill="outline" color="secondary">
         <ion-icon slot="icon-only" name="heart" color="danger"></ion-icon>
     </ion-button>
 
@@ -44,6 +44,10 @@
     
           await alert.present();
         }
+        
+        document.querySelector('#button3').addEventListener('click', () => {
+          console.log('clicked 3!');
+        });
       </script>
 </body>
 </html>
